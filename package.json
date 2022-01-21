@@ -1,0 +1,85 @@
+{
+  "name": "grelin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@firebase/analytics": "^0.6.17",
+    "@vueup/vue-quill": "^1.0.0-beta.7",
+    "algoliasearch": "^4.10.4",
+    "core-js": "^3.6.5",
+    "dns": "^0.2.2",
+    "domino": "^2.1.6",
+    "dotenv": "^10.0.0",
+    "firebase": "^8.9.0",
+    "get-title": "^1.1.2",
+    "get-title-at-url": "^1.1.8",
+    "html-metadata": "^1.7.1",
+    "http": "0.0.1-security",
+    "http2": "^3.3.7",
+    "image-compressor": "^2.0.3",
+    "javascript-time-ago": "^2.3.8",
+    "jsdom": "^16.7.0",
+    "lite-meta-scraper": "^1.0.5",
+    "lodash": "^4.17.21",
+    "logo-scrape": "^1.1.0",
+    "metascraper": "^5.24.2",
+    "metascraper-author": "^5.24.1",
+    "metascraper-clearbit": "^5.24.1",
+    "metascraper-date": "^5.24.1",
+    "metascraper-description": "^5.24.1",
+    "metascraper-image": "^5.24.1",
+    "metascraper-logo": "^5.24.1",
+    "metascraper-publisher": "^5.24.1",
+    "metascraper-title": "^5.24.1",
+    "metascraper-url": "^5.24.1",
+    "nock": "^13.1.1",
+    "node-metainspector": "^2.0.0",
+    "open-graph-scraper-lite": "^1.1.1",
+    "page-icon": "^0.4.0",
+    "page-metadata-parser": "^1.1.4",
+    "pageclip": "^1.0.0",
+    "parse-url": "^5.0.7",
+    "preq": "^0.5.14",
+    "sanitize-html": "^2.4.0",
+    "string-strip-html": "^8.3.0",
+    "swagger-router": "^0.7.4",
+    "unfluff": "^3.2.0",
+    "url-metadata": "^2.5.0",
+    "url-parse": "^1.5.3",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
