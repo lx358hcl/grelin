@@ -47,6 +47,7 @@
             const domino = require('domino');
             //Sett opp egen server
             const URL = `${process.env.VUE_APP_CORSSERVER}/${url.value}`;
+            console.log(URL);
             const response = await fetch(URL);
             const html = await response.text();
             const doc = domino.createWindow(html).document;

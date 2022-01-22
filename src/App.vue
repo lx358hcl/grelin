@@ -28,11 +28,9 @@
     settings.value.websiteinfo = data.data();
 
     if(user != null){
-      console.log(user.uid);
       var userdata = await db.collection("users").doc(user.uid).get();
       settings.value.user = user.uid;
       settings.value.userData = userdata.data();
-      console.log(userdata.data());
       ready.value = true;
     }
     else ready.value = true;

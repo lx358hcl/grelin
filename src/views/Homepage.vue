@@ -77,7 +77,6 @@
     export default {
         computed: {
             chosenComponent() {
-                
                 if(this.$route.name == "submit") return postnewcontent.value;
                 else if(this.$route.name == "search") return searchpage.value;
                 else if(this.$route.name == "about") return aboutpage.value;

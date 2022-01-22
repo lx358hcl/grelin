@@ -284,7 +284,6 @@
                 }
 
                 var q = await db.collection("posts").where("postsrc", "==", PostSchema.postsrc).where("deleted", "==", false).get();
-                console.log(q.docs);
                 
                 if(q.docs.length == 0){
                     batch = db.batch();
@@ -302,7 +301,6 @@
                 }
                 else{
                     var doc = await q.docs[0].data();
-                    console.log(doc.postsrc);
                     alert("That article already exists here: " + "grelin.net/post/" + doc.id);
                 }
 

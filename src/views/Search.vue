@@ -69,8 +69,7 @@
                     page: current_page,
                 }).then(async (response) => {
                     if(response.nbPages <= current_page) moreavailable.value = false;
-                    results.value = response.hits
-                    console.log(results.value);
+                    results.value = response.hits;
                     results.value = getUserInfoForPosts(results.value);
                     allResults.value = allResults.value.concat(results.value);
                 });
