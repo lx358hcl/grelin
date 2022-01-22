@@ -44,7 +44,6 @@
         
         if(isURL(url.value) && !title.value){
             const {getMetadata} = require('page-metadata-parser');
-            const domino = require('domino');
             //Sett opp egen server
             const URL = `${process.env.VUE_APP_CORSSERVER}/${url.value}`;
             const response = await fetch(URL);
