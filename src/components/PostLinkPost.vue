@@ -49,6 +49,7 @@
             const URL = `${process.env.VUE_APP_CORSSERVER}/${url.value}`;
             const response = await fetch(URL);
             const html = await response.text();
+            console.log(html);
             const doc = domino.createWindow(html).document;
             console.log(doc);
             const metadata = getMetadata(doc, URL);
