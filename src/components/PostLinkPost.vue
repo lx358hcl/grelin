@@ -50,7 +50,8 @@
             const response = await fetch(URL);
             const html = await response.text();
             console.log(html);
-            const doc = domino.createWindow(html).document;
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, "text/html");
             console.log(doc);
             const metadata = getMetadata(doc, URL);
             title.value = metadata.title;
