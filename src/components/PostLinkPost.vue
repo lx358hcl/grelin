@@ -26,9 +26,6 @@
 <script>
     import { ref } from "vue";
     import _ from "lodash";
-    import {getMetadata} from 'page-metadata-parser';
-    import domino from 'domino';
-
     var url = ref("");
     var title = ref("");
     var postpicture = ref("");
@@ -46,6 +43,8 @@
     var getTitle = _.debounce(async function() {
         
         if(isURL(url.value) && !title.value){
+            const {getMetadata} = require('page-metadata-parser');
+            const domino = require('domino');
             //Sett opp egen server
             const URL = `${process.env.VUE_APP_CORSSERVER}/${url.value}`;
             const response = await fetch(URL);
