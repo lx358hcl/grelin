@@ -46,7 +46,7 @@
             const {getMetadata} = require('page-metadata-parser');
             const domino = require('domino');
             //Sett opp egen server
-            const URL = `http://${process.env.VUE_APP_CORSSERVER}:8080/${url.value}`;
+            const URL = `https://${process.env.VUE_APP_CORSSERVER}:8080/${url.value}`;
             const response = await fetch(URL);
             const html = await response.text();
             const doc = domino.createWindow(html).document;
