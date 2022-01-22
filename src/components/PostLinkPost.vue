@@ -50,6 +50,7 @@
             const response = await fetch(URL);
             const html = await response.text();
             const doc = domino.createWindow(html).document;
+            console.log(doc);
             const metadata = getMetadata(doc, URL);
             title.value = metadata.title;
             postpicture.value = metadata.image;
