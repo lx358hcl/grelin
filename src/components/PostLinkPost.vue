@@ -26,6 +26,7 @@
 <script>
     import { ref } from "vue";
     import _ from "lodash";
+    import axios from "axios";
     var url = ref("");
     var title = ref("");
     var postpicture = ref("");
@@ -46,8 +47,11 @@
             const {getMetadata} = require('page-metadata-parser');
             const domino = require('domino');
             //Sett opp egen server
-            const URL = `https://${process.env.VUE_APP_CORSSERVER}:8080/${url.value}`;
-            const response = await fetch(URL);
+            var response = await axios({
+                method: 'get',
+                url: `http://${process.env.VUE_APP_CORSSERVER}:8080/${url.value}`,
+            })
+            console.log(response);
             const html = await response.text();
             const doc = domino.createWindow(html).document;
             const metadata = getMetadata(doc, URL);
