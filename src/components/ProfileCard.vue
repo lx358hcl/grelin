@@ -88,6 +88,7 @@
     import firebaseApp from "@/firebase/firebaseconfig.js";
     import firebase from "firebase";
     import Spinner from "./Spinner.vue";
+    import { useRouter } from "vue-router";
     import { ref } from "vue";
     import { QuillEditor } from '@vueup/vue-quill'
     import '@vueup/vue-quill/dist/vue-quill.snow.css';
@@ -101,7 +102,7 @@
     var db = firebaseApp.firestore();
     var settingsMode = ref(false);
     var aboutText = ref("");
-    var editor = ref();
+    
 
     export default{
         props:{
@@ -112,13 +113,21 @@
             Spinner,
         },
         mounted(){
-            if(settings.value.userData && (settings.value.userData.username == this.$route.params.username)){
-                editor.value.setHTML(this.$props.userdata.about);
-            }
-            profilepicture.value = this.$props.userdata.profilepicture;
-            wallpaperpicture.value = this.$props.userdata.wallpaper;
+            
         },
-        setup(){
+        setup(props){
+            var editor = ref();
+            var router = useRouter()
+            
+            setTimeout(function(){
+                if(settings.value.userData && (settings.value.userData.username == router.currentRoute.value.params.username)){
+                    editor.value.setHTML(props.userdata.about)
+                }
+                console.log(router);
+                profilepicture.value = props.userdata.profilepicture;
+                wallpaperpicture.value = props.userdata.wallpaper;
+            }, 100)
+
             function changeMode(){
                 if(settingsMode.value) settingsMode.value = false;
                 else settingsMode.value = true;
