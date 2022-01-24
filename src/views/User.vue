@@ -50,7 +50,7 @@
                         </div>
                         <div class="col d-none d-lg-block" style="margin-left: 0px;">
                             <div class="row">
-                                <ProfileCard v-if = "settings && userdata && exists" v-bind:userdata="userdata"></ProfileCard>
+                                <ProfileCard v-if = "userdata" v-bind:userdata="userdata"></ProfileCard>
                             </div>
                             <div class="row" style="border-radius: 7px;border: 1px solid rgb(228,228,228);padding-top: 7px;padding-left: 5px;margin-top: 11px;">
                                 <Footer></Footer>

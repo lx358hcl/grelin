@@ -122,7 +122,6 @@
             function changeMode(){
                 if(settingsMode.value) settingsMode.value = false;
                 else settingsMode.value = true;
-                
             }
 
             function sendPasswordResetEmail(){
