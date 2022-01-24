@@ -6,7 +6,7 @@
                 <Logo></Logo>
                 <SearchNavBox></SearchNavBox>
                 <ul class="navbar-nav flex-nowrap ms-auto" style="margin-left: 0px;">
-                    <NavAccountButtons v-if = "settings.user"></NavAccountButtons>
+                    <NavAccountButtons></NavAccountButtons>
                     <div class="d-none d-sm-block topbar-divider"></div>
                     <LoginSignUp v-if="!settings.user"></LoginSignUp>
                     <NavAccountCard v-if = "settings.user"></NavAccountCard>

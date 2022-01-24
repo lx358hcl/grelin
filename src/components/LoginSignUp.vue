@@ -14,7 +14,7 @@
                                     </header>
                                 </div>
                                 <div class="col-lg-6 d-none d-lg-flex" style="padding: 0px;">
-                                    <div class="flex-grow-1 bg-login-image" style="background: url(https://firebasestorage.googleapis.com/v0/b/grelin-7442d.appspot.com/o/leaves.png?alt=media&token=343a429b-1fef-41e8-90f9-66ae39ffdf8d) 70% 44% / 80% no-repeat;">
+                                    <div class="flex-grow-1 bg-login-image" style="background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6429d5dd-5732-47ad-aded-6961134a6892/d63y7ua-dd1473ee-9ad3-4574-8621-05e69185e589.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY0MjlkNWRkLTU3MzItNDdhZC1hZGVkLTY5NjExMzRhNjg5MlwvZDYzeTd1YS1kZDE0NzNlZS05YWQzLTQ1NzQtODYyMS0wNWU2OTE4NWU1ODkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.zyFW3dSHGyoUofiTq_p5zBqUHOlHqj5kGt7SIIPNVlQ) 70% -66% / 60% no-repeat">
                                     
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@
                                     </header>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-flex" style="padding-right: 0px;padding-left: 0px;">
-                                    <div class="flex-grow-1 w-100" style="background: url(https://firebasestorage.googleapis.com/v0/b/grelin-7442d.appspot.com/o/coffeeguy.png?alt=media&token=7dba7f32-b280-427c-b50c-0dba00717b2c) 0% -50% / 110% no-repeat">
+                                    <div class="flex-grow-1 w-100" style="background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6429d5dd-5732-47ad-aded-6961134a6892/d63otld-66ba785a-7000-4850-a832-24910f16d225.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY0MjlkNWRkLTU3MzItNDdhZC1hZGVkLTY5NjExMzRhNjg5MlwvZDYzb3RsZC02NmJhNzg1YS03MDAwLTQ4NTAtYTgzMi0yNDkxMGYxNmQyMjUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.DJ_GYDIHK95TrbfGjPk71bUw2VyuEdTniWQL8qj53w0) 0% 50% / 110% no-repeat">
                                     
                                     </div>
                                 </div>
