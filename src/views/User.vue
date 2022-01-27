@@ -308,10 +308,6 @@
                 var newest25 = [];
                 loadingmore.value = true;
 
-                console.log("getting more content")
-                console.log(lastpost.value.ref);
-                console.log(settings.value.posts);
-                
                 try{
                     if(router.currentRoute.value.params.page == "posts"){
                         
@@ -321,10 +317,8 @@
                         catch(e){
                             console.log(e);
                         }
-                        console.log(newest25);
                         newest25.docs.forEach(e => {
                             settings.value.posts[e.id] = e.data();
-                            console.log("O")
                         })
 
                         lastpost.value = newest25.docs[newest25.docs.length - 1];

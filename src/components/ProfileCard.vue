@@ -123,7 +123,6 @@
                 if(settings.value.userData && (settings.value.userData.username == router.currentRoute.value.params.username)){
                     editor.value.setHTML(props.userdata.about)
                 }
-                console.log(router);
                 profilepicture.value = props.userdata.profilepicture;
                 wallpaperpicture.value = props.userdata.wallpaper;
             }, 100)

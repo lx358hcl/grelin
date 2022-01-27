@@ -283,12 +283,30 @@
                     },
                 }
                 
-                var q = null;
+                var q = false;
                 if(PostSchema.type == "link"){
-                    q = await db.collection("posts").where("deleted", "==", false).where("postsrc", "==", PostSchema.postsrc).get()
+                    q = await db.collection("posts").where("deleted", "==", false).where("postsrc", "==", PostSchema.postsrc).get();
+
+                    if(q.docs.length == 0){
+                        batch = db.batch();
+                        batch.set(db.collection("posts").doc(id), PostSchema);
+                        batch.update(db.collection("users").doc(settings.value.user),{
+                            postpoints: firebase.firestore.FieldValue.increment(1),
+                            points: firebase.firestore.FieldValue.increment(1),
+                        })
+                        batch.update(db.collection("posts").doc(id),{
+                            totalscore: firebase.firestore.FieldValue.increment(1),
+                        })
+                        await batch.commit();
+                        window.location = window.origin + "/post/" + id;
+                        router.push({ name: "post", params: {"id": id}})
+                    }
+                    else{
+                        var doc = await q.docs[0].data();
+                        alert("That article already exists here: " + "grelin.net/post/" + doc.id);
+                    }
                 }
-                console.log(q);
-                if(!!q == false){
+                else{
                     batch = db.batch();
                     batch.set(db.collection("posts").doc(id), PostSchema);
                     batch.update(db.collection("users").doc(settings.value.user),{
@@ -301,10 +319,6 @@
                     await batch.commit();
                     window.location = window.origin + "/post/" + id;
                     router.push({ name: "post", params: {"id": id}})
-                }
-                else{
-                    var doc = await q.docs[0].data();
-                    alert("That article already exists here: " + "grelin.net/post/" + doc.id);
                 }
 
                 loading.value = false;
