@@ -199,6 +199,7 @@
                 
                 //Push post to the correct sub
                 id = await db.collection("posts").doc().id;
+                console.log(id);
                 
 
                 if(chosenPostType.value == "link"){
@@ -245,7 +246,6 @@
                         () => {
                             // Handle successful uploads on complete
                             uploadTask.snapshot.ref.getDownloadURL().then((downloadURL) => {
-                                
                                 postImage = downloadURL;
                                 postPost();
                             });
@@ -282,10 +282,13 @@
                         [settings.value.user]:"like",
                     },
                 }
-
-                var q = await db.collection("posts").where("postsrc", "==", PostSchema.postsrc).where("deleted", "==", false).get();
                 
-                if(q.docs.length == 0){
+                var q = null;
+                if(PostSchema.type == "link"){
+                    q = await db.collection("posts").where("deleted", "==", false).where("postsrc", "==", PostSchema.postsrc).get()
+                }
+                console.log(q);
+                if(!!q == false){
                     batch = db.batch();
                     batch.set(db.collection("posts").doc(id), PostSchema);
                     batch.update(db.collection("users").doc(settings.value.user),{
@@ -320,7 +323,6 @@
             }
 
             function changeSubSection(e){
-                
                 chosenSubSection.value = e;
             }
 

@@ -307,13 +307,26 @@
             async function getMoreContent(){
                 var newest25 = [];
                 loadingmore.value = true;
+
+                console.log("getting more content")
+                console.log(lastpost.value.ref);
+                console.log(settings.value.posts);
                 
                 try{
                     if(router.currentRoute.value.params.page == "posts"){
-                        newest25 = await db.collection("posts").where("authoruid", "==", userdata.value.uid).orderBy("created_date", "desc").startAfter(lastpost.value).limit(25).get();
+                        
+                        try{
+                            newest25 = await db.collection("posts").where("authoruid", "==", userdata.value.uid).orderBy("created_date", "desc").startAfter(lastpost.value).limit(25).get();
+                        }
+                        catch(e){
+                            console.log(e);
+                        }
+                        console.log(newest25);
                         newest25.docs.forEach(e => {
                             settings.value.posts[e.id] = e.data();
+                            console.log("O")
                         })
+
                         lastpost.value = newest25.docs[newest25.docs.length - 1];
                         await getUserInfoForPosts();
                         settings.value.usercontent = settings.value.posts;
