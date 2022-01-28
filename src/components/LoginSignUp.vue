@@ -195,7 +195,7 @@
             });
             batch.set(db.collection("users").doc(user.value.uid), {
                 "username": username.value,
-                "profilepicture": "https://firebasestorage.googleapis.com/v0/b/nevet-9e3ed.appspot.com/o/1_400x400.webp?alt=media&token=fabbcb0f-f836-4e8f-984b-34be3af85b00",
+                "profilepicture": "https://firebasestorage.googleapis.com/v0/b/grelin-d230c.appspot.com/o/defaultProfile.svg?alt=media&token=f9802ffe-e0e2-47f5-b2ce-4dd3a2201ca6",
                 "about": "This user hasn't told the world his/her favorite nootropic yet, what a shame.",
                 "email": email.value,
                 "uid": user.value.uid,
