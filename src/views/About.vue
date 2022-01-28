@@ -15,7 +15,7 @@
                         <p>
                             This website is a link-aggregation platform of the nootropic/biohacking-type. <br><br>
 
-                            The project was initially trying to function as an automated version of examine.com with and integrated AI-crawler/filterer. However, due to the limitations of AI-technology and personal filtering lists, that feature has been discontinued. As of now, this is all managed by human-hands which implies that all articles are pre-screened by humans.
+                            Some of the studies are found with a crawler-script, some are found by human hands. Geek away. Look for more info in the tab of the page.
                             <br><br>
                             If you find some studies that are irrelevant, just report them, I'll remove them as quickly as I can. 
                             I'd love a helping hand on finding good research articles :)
