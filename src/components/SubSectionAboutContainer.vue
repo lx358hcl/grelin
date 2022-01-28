@@ -6,6 +6,8 @@
             
             <br><br>Additionally, due to the ever-increasing censoring happening on reddit, we don't have any limitations on free-speech here. Say whatever you want.            
             Grelin is strictly scientitific unlike /r/nootropics and other forums. It's primary and overall purpose is to function as a "somewhat organized" collection of clinical studies for those pursuing human-enhancement and health-benefits. If you find bugs, dont hate me.
+            <br><br>
+            The crawler runs every day around midnight in Los-Angeles😅
         </p>
         <hr>
         <div class="row" style="font-family: Inter;color: rgb(84,84,84); ">
