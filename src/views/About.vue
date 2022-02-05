@@ -24,7 +24,7 @@
 
                             <br><br>
 
-                            - Luka M                    
+                            - Devs                  
                         </p>
                     </div>
                 </div>
