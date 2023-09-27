@@ -1,7 +1,7 @@
 # grelin
-Quasi-reddit hackernews thingy for biohackers and nootropic-enthusiasts with a focus on science, objectivity and free-speech.
+Hackernews-clone-ish for biohackers and nootropic-enthusiasts with a focus on science, objectivity and free-speech.
 
-### [Demo](https://www.grelin.net) (doesn't work now)
+### [Demo](https://www.grelin.net) (doesn't work anymroe due to cessation of firebase-services)
 
 ### Some previews from before
 ____
