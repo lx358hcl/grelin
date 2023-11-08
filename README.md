@@ -22,6 +22,3 @@ Grelin is a platform that was inspired by the likes of Hackernews, crafted speci
   <img src="3.jpg" alt="Grelin UI Preview 3" title="Grelin Article View" width="400px">
   <img src="5.jpg" alt="Grelin UI Preview 4" title="Grelin Study Highlights" width="400px">
 </p>
-![alt-text-1](1.jpg "title-1") ![alt-text-2](2.jpg "title-2")
-![alt-text-1](3.jpg "title-1") ![alt-text-2](5.jpg "title-2")
----
