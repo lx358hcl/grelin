@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/lukamo1996/grelin/assets/52632596/107dc777-3f21-4ad6-a4c0-d1ca7352aecb" width="250">
+  <img src="https://github.com/lukamo1996/grelin/assets/52632596/68209608-029e-44be-b35b-2b2c4888d8f5" width="250">
   <h1 align="center">Grelin</h1>
   <h3 align="center">A Community for Biohackers & Nootropic Enthusiasts</h3>
 </p>
